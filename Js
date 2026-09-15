@@ -1,0 +1,23 @@
+// ======================================
+// CONTROLE DA ATIVIDADE DE TIPOGRAFIA
+// ======================================
+
+const detailsButton = document.getElementById("detailsButton");
+
+detailsButton.addEventListener("click", function () {
+
+    if (detailsButton.textContent === "Ver avaliações") {
+
+        detailsButton.textContent = "Avaliações exibidas";
+
+        alert(
+            "IMDb: 9.1\nMyAnimeList: 9.1"
+        );
+
+    } else {
+
+        detailsButton.textContent = "Ver avaliações";
+
+    }
+
+});
