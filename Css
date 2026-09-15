@@ -1,0 +1,498 @@
+/* ==============================
+   RESET
+================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ==============================
+   VARIÁVEIS
+================================= */
+
+:root {
+
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+
+    --color-primary: #6c4cff;
+    --color-primary-dark: #5135d9;
+
+    --color-background: #f5f5f7;
+    --color-surface: #ffffff;
+
+    --color-text: #222222;
+    --color-text-secondary: #666666;
+    --color-caption: #999999;
+
+    --border: #e5e5e5;
+}
+
+
+/* ==============================
+   BODY
+================================= */
+
+body {
+    background: var(--color-background);
+    color: var(--color-text);
+
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   HEADER
+================================= */
+
+.header {
+    background: #151515;
+    color: white;
+
+    text-align: center;
+
+    padding: 80px 20px;
+}
+
+.header .tag {
+    display: inline-block;
+
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 0.12em;
+
+    color: #b9aaff;
+
+    margin-bottom: 16px;
+}
+
+.header h1 {
+    font-family: var(--font-heading);
+
+    font-size: 36px;
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    margin-bottom: 16px;
+}
+
+.header p {
+    max-width: 650px;
+    margin: 0 auto;
+
+    color: #bdbdbd;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   CONTAINER
+================================= */
+
+.container {
+    width: min(100% - 40px, 900px);
+
+    margin: 0 auto;
+}
+
+
+/* ==============================
+   SEÇÕES
+================================= */
+
+.section {
+    background: var(--color-surface);
+
+    margin: 40px 0;
+    padding: 40px;
+
+    border-radius: 16px;
+
+    border: 1px solid var(--border);
+}
+
+.section-label {
+    display: block;
+
+    font-family: var(--font-heading);
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+
+    color: var(--color-primary);
+
+    margin-bottom: 10px;
+}
+
+.section h2 {
+    font-family: var(--font-heading);
+
+    font-size: 28px;
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    margin-bottom: 20px;
+}
+
+.body {
+    font-family: var(--font-body);
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.6;
+
+    color: #444;
+
+    margin-bottom: 16px;
+}
+
+
+/* ==============================
+   ESCALA TIPOGRÁFICA
+================================= */
+
+.type-scale {
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+.type-item {
+    padding: 20px;
+
+    background: #fafafa;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+}
+
+.type-info {
+    display: block;
+
+    font-family: var(--font-body);
+
+    font-size: 12px;
+    font-weight: 600;
+
+    color: var(--color-primary);
+
+    margin-bottom: 12px;
+}
+
+
+/* H1 */
+
+.demo-h1 {
+    font-family: var(--font-heading);
+
+    font-size: 36px;
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+/* H2 */
+
+.demo-h2 {
+    font-family: var(--font-heading);
+
+    font-size: 28px;
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+/* H3 */
+
+.demo-h3 {
+    font-family: var(--font-heading);
+
+    font-size: 20px;
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+/* BODY */
+
+.demo-body {
+    font-family: var(--font-body);
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.6;
+}
+
+
+/* SMALL */
+
+.demo-small {
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    color: var(--color-text-secondary);
+}
+
+
+/* CAPTION */
+
+.demo-caption {
+    font-size: 12px;
+    font-weight: 400;
+
+    line-height: 1.4;
+
+    color: var(--color-caption);
+}
+
+
+/* ==============================
+   CARD DE ANIME
+================================= */
+
+.anime-card {
+    display: grid;
+
+    grid-template-columns: 180px 1fr;
+
+    gap: 24px;
+
+    padding: 24px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+}
+
+
+/* Imagem fictícia */
+
+.anime-image {
+    min-height: 250px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #e9e5ff;
+
+    border-radius: 8px;
+
+    font-family: var(--font-heading);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    color: var(--color-primary);
+}
+
+
+/* Categoria */
+
+.category {
+    display: block;
+
+    font-family: var(--font-heading);
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+
+    color: var(--color-primary);
+
+    margin-bottom: 8px;
+}
+
+
+/* Título do anime */
+
+.anime-content h3 {
+    font-family: var(--font-heading);
+
+    font-size: 20px;
+    font-weight: 600;
+
+    line-height: 1.4;
+
+    margin-bottom: 12px;
+}
+
+
+/* ==============================
+   AVALIAÇÕES
+================================= */
+
+.ratings {
+    display: flex;
+
+    gap: 30px;
+
+    margin: 20px 0;
+}
+
+.ratings div {
+    display: flex;
+    flex-direction: column;
+}
+
+.ratings strong {
+    font-family: var(--font-heading);
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.ratings span {
+    font-size: 12px;
+
+    color: var(--color-caption);
+}
+
+
+/* ==============================
+   BOTÃO
+================================= */
+
+button {
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    background: var(--color-primary);
+
+    color: white;
+
+    font-family: var(--font-heading);
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background: var(--color-primary-dark);
+}
+
+
+/* ==============================
+   TABELA
+================================= */
+
+.table {
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.table-row {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1.3fr
+        1fr
+        1fr
+        1.2fr;
+
+    gap: 10px;
+
+    padding: 14px 16px;
+
+    border-bottom: 1px solid var(--border);
+
+    font-size: 14px;
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+.table-header {
+    background: #f5f5f5;
+
+    font-family: var(--font-heading);
+
+    font-weight: 600;
+}
+
+
+/* ==============================
+   FOOTER
+================================= */
+
+footer {
+    text-align: center;
+
+    padding: 40px 20px;
+
+    color: var(--color-caption);
+
+    font-size: 12px;
+}
+
+
+/* ==============================
+   RESPONSIVIDADE
+================================= */
+
+@media (max-width: 650px) {
+
+    .header {
+        padding: 60px 20px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .section {
+        padding: 25px;
+    }
+
+    .anime-card {
+        grid-template-columns: 1fr;
+    }
+
+    .anime-image {
+        min-height: 180px;
+    }
+
+    .table {
+        overflow-x: auto;
+    }
+
+    .table-row {
+        min-width: 600px;
+    }
+
+}
